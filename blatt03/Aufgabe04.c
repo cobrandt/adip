@@ -42,6 +42,7 @@ int main(void){
         sum_oldf = sumf;
         sumf += numbersf[i];
         deltaf += numbersf[i] - (sumf - sum_oldf);
+        sumf += deltaf;
     }
     printf("Smart sum using floats = %f", sumf);
     printf("\n\n");
@@ -53,6 +54,7 @@ int main(void){
         sum_oldd = sumd;
         sumd += numbersd[i];
         deltad += numbersd[i] - (sumd - sum_oldd);
+        sumd += deltad;
     }
     printf("Smart sum using doubles = %f", sumd);
     printf("\n");
